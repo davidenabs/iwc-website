@@ -879,7 +879,7 @@ section {
 .hero-fullscreen {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-fullscreen-bg.jpg") center center;
+  background: url("../img/hero-fullscreen-bg.webp") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -3179,4 +3179,9 @@ section {
 .footer .footer-legal .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+
+.btn-rounded {
+  border-radius: 50px !important;
 }

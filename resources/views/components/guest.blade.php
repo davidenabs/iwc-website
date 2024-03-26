@@ -29,12 +29,12 @@
     <title>{{ $title ?? config('app.name') }}</title>
 
     <!-- Google Fonts -->
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
 
@@ -62,10 +62,9 @@
     <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('assets/logo/48x48.png') }}" />
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/logo/96x96.png') }}" />
 
-    @livewireStyles
-
     @yield('styles')
-
+    
+    {{-- @livewireStyles --}}
 </head>
 
 <body>
@@ -190,7 +189,7 @@
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
-    @livewireScripts
+    {{-- @livewireScripts --}}
 
 </body>
 

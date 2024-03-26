@@ -63,16 +63,17 @@ class PostResource extends Resource
                     ->disableToolbarButtons([
                         'codeBlock',
                     ])
-                    // ->fileAttachmentsDirectory('blog/posts')
+                    ->fileAttachmentsDirectory('blog/posts')
                     ->columnSpan('full'),
                 Forms\Components\FileUpload::make('image')
-                // ->label('Featured image')
-                // ->directory('blog/posts')
-                // ->disk('local')
-                // ->storeFileNamesIn('image')
-                // ->moveFiles()
-                // ->image()
-                // ->maxSize(2024),
+                    ->imageResizeMode('cover')
+                    ->imageCropAspectRatio('16:9')
+                    ->imageResizeTargetWidth('1920')
+                    ->imageResizeTargetHeight('1080')
+                    ->directory('blog/posts')
+                    ->disk('public')
+                    ->image()
+                    ->maxSize(2024),
             ]);
     }
 
